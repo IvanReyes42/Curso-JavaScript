@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo While</title>
+</head>
+<body>
+    
+    <script>
+        var contador = 0;
+        //Imprimer los numeros del 1 al 10
+        while(contador <10){
+            contador++
+            console.log(contador);
+        }
+
+        //Imprimer numeros pares del 1 al 10
+        console.log("Pares   ")
+        contador = 0;
+        while(contador<10){
+            contador++;
+            if(contador % 2 === 0){
+                console.log(contador);
+            }
+        }
+
+        //Imprimer numeros impares del 1 al 10 usando la palabra reservada continue
+        console.log("Impares con continue   ")
+        contador = 0;
+        while(contador<10){
+            contador++;
+            if(contador % 2 === 0){
+                continue;
+            }
+            console.log(contador);
+        }
+
+        //Imprimir los numeros del 1 al 10 usando la palabra reservada break
+        console.log("Numeros del 1 al 10 con break   ")
+        contador = 0;
+        while(true){
+            contador++;
+            console.log(contador)
+            if(contador >=10){
+                break;
+            }
+        }
+
+        //Ciclo Do while
+        console.log("Ciclo Do While   ")
+        contador = 0;
+        do{
+            contador++
+            console.log("Hola Mundo "+contador)
+        }while(false)
+
+    </script>
+</body>
+</html>
