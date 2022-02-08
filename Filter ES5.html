@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter ES5</title>
+</head>
+<body>
+    
+    <script>
+        var numeros = [10,2,3,5,9,20,22]
+        //Metodo tradicional para filtrar los numeros pares y crear un nuevo arreglo
+        //Arreglo vacio
+        var numerospares = []
+
+        for(var i = numeros.length; i >= 0; i--){
+            if(numeros[i] % 2 == 0){
+                numerospares.push(numeros[i])
+            }
+        }
+        console.log(numerospares)
+
+        //Metodo usando filter
+        var pares = []
+        pares = numeros.filter(function(numero){
+            return numero % 2 == 0
+        })
+
+        console.log(pares)
+
+    </script>
+
+</body>
+</html>

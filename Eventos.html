@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    
+    <!--Eventos no tan usados declarados desde el HTML llamando a funciones en JS-->
+    <button onclick="Evento()">
+        Click on me
+    </button>
+
+    <button  id="BtnClick">
+        Click on me 2 
+    </button>
+
+    <script>
+        document.getElementById("BtnClick").addEventListener("click",Evento);
+
+        //Declaramos una funcion "Metodo"
+        function Evento(){
+            alert("Hola soy un evento")
+        }
+
+        
+    </script>
+
+</body>
+</html>

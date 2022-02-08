@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+        //forEach funciona como un ciclo for podiendo obtener el elemento y su index
+        var array = [2,4,6,8]
+        array.forEach(function(elemento){
+            console.log(elemento)
+        })
+
+        //Convertir todos los elementos de un arreglo en cuadrados
+        
+        array.forEach(function(elemento,index,arreglo){
+            arreglo[index] = Math.pow(elemento,2)
+        })
+        console.log(array)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce ES5</title>
+</head>
+<body>
+    
+    <script>
+        //Metodo para unir datos de un arreglo de letras como join
+        var letras = ["H","o","l","a"]
+        var Palabra = letras.reduce(function(anterior,actual){
+            return anterior+actual;
+        })
+        console.log(Palabra);
+
+        //Metodo para sumar todos los numeros de un arreglo
+        var numeros = [20,1,23,1,5]
+        var suma = numeros.reduce(function(anterior,actual){
+            return anterior+actual
+        })
+        console.log(suma)
+
+    </script>
+
+</body>
+</html>

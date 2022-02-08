@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Elementos del DOM</title>
+
+    <style>
+        .clase{
+            background-color: red;
+            padding: 10px;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    
+    <div id="Id"></div>
+    <div class="clase"></div>
+    <p class="clase" id ="p" ></p>
+
+    <script>
+        //Obtener el elemento por ID y añadimos una clase de estilo
+        var v1 = document.getElementById("Id")
+        v1.classList.add("clase")
+        console.log(v1);
+
+        //Obtener los elementos por Clase
+        var v2 = document.getElementsByClassName("clase")
+        console.log(v2);
+
+        //Obtener los elementos por Etiqueta
+        var v3 = document.getElementsByTagName("div")
+        console.log(v3)
+        v3 = document.getElementsByTagName("p")
+        console.log(v3)
+
+        //Obtener elemento por JQuery
+        //Por Clase
+        var v4 = document.querySelector(".clase")
+        console.log(v4)
+
+        //Por Id
+        var v5 = document.querySelector("#Id")
+        console.log(v5)
+
+        //Obtener mas de un elemento con JQuery
+        var v6 = document.querySelectorAll(".clase")
+        console.log(v6)
+
+    </script>
+</body>
+</html>

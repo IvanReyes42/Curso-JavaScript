@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map ES5</title>
+</head>
+<body>
+    <script>
+        //Metodo traduciona para modificar los datos de un arreglo y crear un nuevo arreglo
+        var numeros = [1,5,6,8]
+        var cuadrados = []
+        for(var i = numeros.length-1;i>=0; i--){
+            cuadrados.push(Math.pow(numeros[i],2))
+        }
+        console.log(cuadrados)
+
+        //Metodo usando la funcion Map
+        var cuadra = []
+        cuadra = numeros.map(function(numero){
+            return Math.pow(numero,2)
+        })
+        console.log(cuadra)
+
+    </script>
+</body>
+</html>

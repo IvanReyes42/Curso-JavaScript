@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de arreglos</title>
+</head>
+<body>
+    <script>
+
+        var array = [2,5,1,10,20]
+        array.sort() //Metodo de ordenado por orden alfabetico en numeros solo lee la primer linea
+        //El resultado es 1,10,2,20,5
+        console.log(array)
+
+        //Para ordenas los elementos numericos podemos usar los siguientes metodos parandolos como parametros en el metodo sort
+        function Ordener(a,b){
+            if(a>b) {return 1}
+            else if(b>a){return -1}
+            else if(a==b){return 0}
+        }
+        /*
+            Otro metodo es
+            function Ordenar(a,b){
+                return a -b; 
+                ya q que si el primero es mayor que el segundo retorna un positivo
+                y si el segundo es mayor que el primero retorna un negativo
+                y si son iguales retorna un 0
+            }
+        */
+        array.sort(Ordener)
+        console.log(array)
+        
+        //Para Invertir el orden de los elementos usamos la funcion reverse
+        array.reverse()
+        console.log(array)
+
+
+        /*
+        Para convetir un string en un arreglo usamos split('') separando el string por algun caracter y pasando cada parte al arreglo
+        */
+        var arreglo = "a,b,c,2".split(',')
+        console.log(arreglo)
+
+        //Lo contrario para unirlo usamos join() 
+        arreglo = arreglo.join() //Los uni por defecto con una coma y si queremos otro caracter lo pasamos como parametro
+        console.log(arreglo)
+
+        
+
+    </script>
+</body>
+</html>

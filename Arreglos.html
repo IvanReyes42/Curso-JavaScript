@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    
+    <script>
+        //Declaramos arreglos usando []
+        var arreglo = [20,10,5]
+        //Los arreglos puedes conbinar mas de un tipo de dato
+
+        console.log(arreglo)
+
+        //Conocer la cantidad de elementos de un arreglo
+        console.log(arreglo.length)
+
+        //Agregar un elemento nuevo al final del arreglo
+        arreglo.push(1)
+        console.log(arreglo)
+
+        //Agregar un elemento nuevo al inicio del arreglo
+        arreglo.unshift(25)
+        console.log(arreglo)
+
+        //Eliminar el primer elemento
+        arreglo.shift();
+        console.log(arreglo)
+
+        //Eliminar el ultimo elemento
+        arreglo.pop();
+        console.log(arreglo)
+
+        //Recorer un arreglo usando un ciclo for optimo
+        var i = arreglo.length-1
+        for(;i>=0;i--){
+            console.log(arreglo[i])
+        }
+
+    </script>
+
+</body>
+</html>
